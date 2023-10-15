@@ -1,3 +1,3 @@
-# adameves.github.io
+# https//adameves.github.io
 
-yea starting the web thing idk it probably wont work - 7:38pm 10/10/23
+Blog Thing I guess... Journal maybe.
