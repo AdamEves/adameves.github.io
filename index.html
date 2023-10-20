@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Adam</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset="UTF-8">
+  <title>Adam Eves Tattoo Designer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <p>Adam.</p>
-            <nav>
-                <a href="">Home</a>
-                <a href="">New</a>
-                <a href="">Popular</a>
-                <a href="">Trending</a>
-                <a href="">Categories</a>
-            </nav>
-        </header>
-        <section>
-            <aside>
-                <img src="https://picsum.photos/id/17" alt="">
-                <div>
-                    <p>Fear.</p>
-                    <div>
-                        <p>I could be fine or my life could be over.</p>
-                        <button>READ MORE</button>
-                    </div>
-                </div>
-            </aside>
+  <header>
+    <h1>Adam Eves Tattoo Designer Portfolio</h1>
+  </header>
+  <main>
+    <section id="portfolio">
+      <h2>Designs</h2>
+      <ul>
+        <li>
+          <span>Design 1</span>
+          <button onclick="showDesign('design1.jpg')">View</button>
+        </li>
+        <li>
+          <span>Design 2</span>
+          <button onclick="showDesign('design2.jpg')">View</button>
+        </li>
+        <!-- Add more designs here -->
+      </ul>
+    </section>
+  </main>
+  <div id="popup" class="hidden">
+    <div id="popup-content">
+      <span id="close" onclick="closePopup()">&times;</span>
+      <img id="popup-image" src="" alt="Tattoo Design">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
