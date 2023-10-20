@@ -2,37 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>UI/UX Design to Website</title>
+    <title>Image Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Website Title</h1>
-        <nav>
-            <ul>
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-            </ul>
-        </nav>
+        <h1>Image Gallery</h1>
     </header>
     <main>
-        <section id="section1">
-            <h2>Section 1</h2>
-            <p>Content for section 1</p>
-        </section>
-        <section id="section2">
-            <h2>Section 2</h2>
-            <p>Content for section 2</p>
-        </section>
-        <section id="section3">
-            <h2>Section 3</h2>
-            <p>Content for section 3</p>
-        </section>
+        <div id="gallery">
+            <img src="thumbnail1.jpg" alt="Image 1" onclick="showImage('image1.jpg')">
+            <img src="thumbnail2.jpg" alt="Image 2" onclick="showImage('image2.jpg')">
+            <img src="thumbnail3.jpg" alt="Image 3" onclick="showImage('image3.jpg')">
+            <!-- Add more thumbnails here -->
+        </div>
+        <div id="popup" class="hidden">
+            <span id="close" onclick="closePopup()">&times;</span>
+            <img id="popup-image" src="" alt="Full-sized Image">
+        </div>
+        <section id="admin">
+  <h2>Admin Panel</h2>
+  <input type="file" id="imageFile">
+  <button onclick="addImage()">Add Image</button>
+</section>
     </main>
-    <footer>
-        <p>Footer content</p>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
